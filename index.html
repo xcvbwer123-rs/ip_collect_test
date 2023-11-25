@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const xhr = new XMLHttpRequest()
+        xhr.open("get", "https://ipapi.co/ip/")
+        xhr.onload = function(){document.write("ip : " + xhr.responseText + "<br/>device : " + navigator.userAgentData.platform + "/" + navigator.userAgent)}
+        xhr.send()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
